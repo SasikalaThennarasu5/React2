@@ -1,0 +1,115 @@
+/* Blog Section Container */
+.project1-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Heading */
+.project1-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Theme Toggle Button */
+.project1-section .theme-toggle-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.project1-section .theme-toggle-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Form Styles */
+.project1-section form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project1-section input[type="text"] {
+  flex-grow: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 2px solid var(--input-border);
+  border-radius: 6px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+.project1-section input[type="text"]:focus {
+  border-color: var(--accent-color);
+}
+
+/* Submit Button */
+.project1-section button[type="submit"] {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.project1-section button[type="submit"]:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Posts List */
+.project1-section ul {
+  list-style: disc inside;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.project1-section ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Scrollbar Styling (optional) */
+.project1-section ul::-webkit-scrollbar {
+  width: 8px;
+}
+.project1-section ul::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Light Theme Variables */
+:root {
+  --bg-color: #fff;
+  --text-color: #222;
+  --accent-color: #007bff;
+  --accent-hover: #0056b3;
+  --input-border: #ccc;
+  --border-color: #ddd;
+}
+
+/* Dark Theme Variables */
+[data-theme='dark'] {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --accent-color: #66aaff;
+  --accent-hover: #5599ee;
+  --input-border: #555;
+  --border-color: #444;
+}

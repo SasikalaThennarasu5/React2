@@ -1,46 +1,60 @@
-// src/App.jsx
-import React from "react";
-import ValidationForm from "./components/ValidationForm";
-import RadioButtonForm from "./components/RadioButtonForm";
-import MultiFieldForm from "./components/MultiFieldForm";
-import CustomHookForm from "./components/CustomHookForm";
-import ComplexForm from "./components/ComplexForm";
-import ControlledForm from "./components/ControlledForm";
-import CheckboxForm from "./components/CheckboxForm";
-import UncontrolledForm from "./components/UncontrolledForm";
-import SelectForm from "./components/SelectForm";
+import React from 'react';
+import Navbar from './components/Navbar';
 
-const App = () => {
+// Import all tasks
+import Task1 from './components/Task1';
+import Task2 from './components/Task2';
+import Task3 from './components/Task3';
+import Task4 from './components/Task4';
+import Task5 from './components/Task5';
+import Task6 from './components/Task6';
+import Task7 from './components/Task7';
+import Task8 from './components/Task8';
+import Task9 from './components/Task9';
+import Task10 from './components/Task10';
+import Task11 from './components/Task11';
+import Task12 from './components/Task12';
+import Task13 from './components/Task13';
+
+// Import all projects
+import Project1 from './components/Project1';
+import Project2 from './components/Project2';
+import Project3 from './components/Project3';
+import Project4 from './components/Project4';
+
+function App() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>1. Validation Form</h2>
-      <ValidationForm />
+    <>
+      <Navbar />
 
-      <h2>2️. Radio Button Form</h2>
-      <RadioButtonForm />
+      <main className="content-wrapper" id="tasks">
+        <h1>React Forms Tasks & Mini Projects</h1>
 
-      <h2>3️.Multi-Field Form</h2>
-      <MultiFieldForm />
+        {/* Tasks */}
+        <Task1 />
+        <Task2 />
+        <Task3 />
+        <Task4 />
+        <Task5 />
+        <Task6 />
+        <Task7 />
+        <Task8 />
+        <Task9 />
+        <Task10 />
+        <Task11 />
+        <Task12 />
+        <Task13 />
 
-      <h2>4.Custom Hook Form</h2>
-      <CustomHookForm />
-
-      <h2>5️. Complex Form with useReducer</h2>
-      <ComplexForm />
-
-      <h2>6. Controlled Form</h2>
-      <ValidationForm />
-
-      <h2>7. Uncontrolled Form</h2>
-      <ValidationForm />
-
-      <h2>8. Checkbox Form</h2>
-      <ValidationForm />
-
-      <h2>9. Select Form</h2>
-      <SelectForm />
-    </div>
+        <section id="projects">
+          <h1>Mini Projects</h1>
+          <Project1 />
+          <Project2 />
+          <Project3 />
+          <Project4 />
+        </section>
+      </main>
+    </>
   );
-};
+}
 
 export default App;

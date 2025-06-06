@@ -1,0 +1,144 @@
+/* Project2.css */
+
+.todo-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  border-color: #007bff;
+}
+
+.todo-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  margin: 0 0.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #eee;
+  color: #555;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  background: #f9f9f9;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.task-text {
+  font-size: 1rem;
+  color: #222;
+  user-select: none;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  margin-left: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.task-actions button:hover {
+  color: #004085;
+}
+
+.task-actions button.delete {
+  color: #dc3545;
+}
+
+.task-actions button.delete:hover {
+  color: #a71d2a;
+}
+
+.task-edit-input {
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 250px;
+}
+
+.task-edit-input:focus {
+  border-color: #007bff;
+}
